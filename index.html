@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>Home</title>
+    <link rel="icon" href="images/T.png" type="image/x-icon" />
     <style>
-      /* CSS for body and container */
+      html {
+        height: 100%;
+      }
       body {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-color: #111;
         color: #fff;
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
+        font-size: larger;
       }
 
       .container {
@@ -17,7 +24,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 15vh;
       }
 
       /* CSS for top navigation */
@@ -39,21 +46,66 @@
       .content {
         text-align: center;
       }
+
+      p {
+        line-height: 150%;
+      }
+
+      .renderer {
+        float: left;
+        height: 250px;
+        width: 1000px;
+        border-radius: 50px;
+        object-fit: cover;
+        margin-right: 70px;
+        margin-top: 100px;
+      }
+
+      .description {
+      }
+
+      .divider {
+        margin-bottom: -870px;
+        margin-left: -30px;
+        border-radius: 10px;
+        border-left: solid gray;
+        height: 1000px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
     <div class="topnav">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
+      <a href="index.html">Home</a>
+      <a href="#">Portfolio</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
-
     <div class="container">
       <div class="content">
-        <h1>Hello World</h1>
-        <p>This is a WIP site for Tristan Peloquin's project portfolio.</p>
+        <h1>Hello!</h1>
+        <p>
+          My name is Tristan Peloquin, and I'm currently working on a Computer
+          Science major.<br />Take a look around at the projects I've made!
+        </p>
       </div>
     </div>
+    <div class="divider"></div>
+    <img
+      class="renderer"
+      src="images/renderer.png"
+      alt="A demonstration of a 3D renderer with multiple spheres with reflections and shadows."
+    />
+    <p class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet
+      voluptas sunt, corporis magni laudantium veniam dolor corrupti eos ipsum
+      consequatur ex ratione possimus deserunt delectus assumenda esse iusto
+      blanditiis. Eligendi dicta numquam non nemo repellendus ipsum quia a
+      tenetur sint, repudiandae labore dolores perspiciatis iste illo vel maxime
+      alias?
+      <a href="https://github.com/TristanPeloquin/3D-Renderer" target="_blank">
+        Check the project out!</a
+      >
+    </p>
   </body>
 </html>
